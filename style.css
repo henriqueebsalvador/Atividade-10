@@ -1,22 +1,24 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(assets/roscoe.png);
+    background-size: 100%;
+
+}
+
+
 #FormAdocao {
-    font-family: Arial, Helvetica, sans-serif;
     display: grid;
     justify-content: center;
-    background-color: white;
-    padding: 40px;
-    border: 10px;
+    background-color: rgba(0, 0, 0, 0.600);
+
+    color: white;
     border-radius: 10px;
-    width: 50%;
-}
-
-.divforms {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-}
-
-body {
-    background-color: gray;
+    flex-direction: column;
+    padding: 1%;
+    margin: 10px;
+    gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
