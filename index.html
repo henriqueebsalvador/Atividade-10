@@ -8,32 +8,63 @@
 </head>
 
 <body>
-    <form id="FormAdocao" action="Formulario">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-        <br><br>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="Seu melhor Email" required>
-        <br><br>
-        <label for="Telefone">Numero:</label>
-        <input type="text" id="telefone" name="Telefone" placeholder="Seu Numero de Telefone" required>
-        <br><br>
-        <label for="CPF">CPF:</label>
-        <input type="text" id="cpf" name="CPF" placeholder="Seu CPF (Sem ponto e traço)" required>
-        <br><br>
-        <label for="Idade">Idade:</label>
-        <input type="text" id="idade" name="Idade" placeholder="Sua Idade" required>
-        <br><br>
-        <label for="Cidade">Cidade:</label>
-        <input type="text" id="moradia" name="Tipo de moradia" placeholder="Casa ou Apartamento" required>
-        <br><br>
-        <label for="Quintal">Você tem quintal?</label>
-        <select id="Quintal" name="Quintal" required>
-            <option value=""></option>
-            <option value="sim">Sim</option>
-            <option value="nao">Não</option>
-        </select>
-    </form>
+    <div id="divforms" >
+        
+        
+        <form id="FormAdocao" action="Formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Seu melhor Email" required>
+            <br><br>
+            <label for="Telefone">Numero:</label>
+            <input type="text" id="telefone" name="Telefone" placeholder="Seu Numero de Telefone" required>
+            <br><br>
+            <label for="CPF">CPF:</label>
+            <input type="text" id="cpf" name="CPF" placeholder="Seu CPF (Sem ponto e traço)" required>
+            <br><br>
+            <label for="Idade">Idade:</label>
+            <input type="number" id="idade" name="Idade" placeholder="Sua Idade" required>
+            <br><br>
+            <label for="Cidade">Cidade:</label>
+            <input type="text" id="moradia" name="Tipo de moradia" placeholder="Casa ou Apartamento" required>
+            <br><br>
+            <label for="Moradia">Tipo de Moradia:</label>
+            <select id="Moradia" name="Moradia" required>
+                <option value=""></option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+            </select>
+            <br><br>
+            <label for="Quintal">Você tem quintal?</label>
+            <select id="Quintal" name="Quintal" required>
+                <option value=""></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <br><br>
+            <label for="PETS">Ja teve PETS?</label>
+            <select id="PETS" name="PETS" required>
+                <option value=""></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <br><br>
+            <label for="PETS">Quantas horas o Pet ficara sozinho?</label>
+            <select id="PETS" name="PETS" required>
+                <option value=""></option>
+                <option value="7">Até 7</option>
+                <option value="8">8 ou Mais</option>
+            </select>
+            <br><br>
+            <label for="Motivo">Motivo da Adoção:</label>
+            <input type="text" id="Motivo" name="Motivo" placeholder="Motivo Da Adoção" required>
+            <br><br>
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Aceito os termos de adoção</label>
+        </form>
+    </div>
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,22 @@
+#FormAdocao {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    padding: 40px;
+    border: 10px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.divforms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+body {
+    background-color: gray;
+}
