@@ -1,6 +1,6 @@
 const form = document.getElementById('FormAdocao');
 
-const cpfsCadastrados = ['12345678901', '98765432100', '12312312312'];
+const cpfsCadastrados = ['99999999999', '88888888888', '77777777777'];
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
