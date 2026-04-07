@@ -23,87 +23,87 @@ form.addEventListener('submit', function (event) {
     const termos = document.getElementById('termos').checked;
 
     if (nome.length < 3) {
-        alert('Erro: O nome deve ter no mínimo 3 caracteres.');
+        alert('Erro: O nome deve ter pelo menos 3 caracteres.');
         return;
     }
 
     if (email.indexOf('@') === -1) {
-        alert('Erro: O email deve ser válido (conter "@").');
+        alert('Erro: O email deve conter "@".');
         return;
     }
 
     if (telefone.length < 8) {
-        alert('Erro: O telefone deve ter no mínimo 8 dígitos.');
+        alert('Erro: O telefone deve ter 8 dígitos.');
         return;
     }
 
     if (cpf === "") {
-        alert('Erro: O CPF é obrigatório.');
+        alert('Erro: O CPF e obrigatorio.');
         return;
     }
 
     if (isNaN(idade)) {
-        alert('Erro: A idade deve ser um número válido.');
+        alert('Erro: A idade deve ser um numero certo.');
         return;
     }
 
     if (cidade === "") {
-        alert('Erro: A cidade é obrigatória.');
+        alert('Erro: A cidade e obrigatoria.');
         return;
     }
 
     if (moradia === "") {
-        alert('Erro: O tipo de moradia é obrigatório.');
+        alert('Erro: O tipo de moradia e obrigatorio.');
         return;
     }
 
     if (quintal === "") {
-        alert('Erro: Informar se possui quintal é obrigatório.');
+        alert('Erro: Informar se tem quintal e obrigatorio.');
         return;
     }
 
     if (jaTevePets === "") {
-        alert('Erro: Informar se já teve pet é obrigatório.');
+        alert('Erro: Informar se teve pet e obrigatorio.');
         return;
     }
 
     if (espacoExterno === "") {
-        alert('Erro: Informar sobre uso de espaço externo é obrigatório.');
+        alert('Erro: Informar sobre o espaço externo e obrigatorio.');
         return;
     }
 
     if (isNaN(horasSozinho)) {
-        alert('Erro: As horas sozinho devem ser um valor numérico.');
+        alert('Erro: As horas sozinho devem ser um valor numerico.');
         return;
     }
 
     if (motivo.length < 10) {
-        alert('Erro: O motivo deve ter no mínimo 10 caracteres.');
+        alert('Erro: O motivo deve ter pelo menos 10 caracteres.');
         return;
     }
 
     if (!termos) {
-        alert('Erro: Você deve aceitar os termos de responsabilidade.');
+        alert('Erro: Voce deve aceitar os termos de responsabilidade.');
         return;
     }
 
     if (idade < 18) {
-        alert('O candidato deve ter 18 anos ou mais. O envio foi bloqueado.');
+        alert('O candidato tem que ter 18 anos ou mais. O envio foi bloqueado.');
         return;
     }
 
     if (cpfsCadastrados.indexOf(cpf) !== -1) {
-        alert('Este CPF já está cadastrado em nosso sistema. Procure a ONG.');
+        alert('Este CPF ja esta cadastrado em nosso sistema. Procure a ONG.');
         return;
     }
 
     if (moradia === 'apartamento' && quintal === 'sim') {
-        alert('Erro de Coerência: Quem mora em apartamento não pode indicar que possui quintal.');
+        alert('Erro de Coerência: Quem mora em apartamento nao pode indicar que tem quintal.');
         return;
     }
 
     if (quintal === 'nao' && espacoExterno === 'sim') {
-        alert('Erro de Coerência: Quem não possui quintal não pode indicar uso de espaço externo.');
+        alert('Erro de Coerência: Quem nao tem quintal nao pode indicar uso de espaço externo.');
         return;
     }
 
